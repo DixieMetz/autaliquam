@@ -1,0 +1,34 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "include": [
+        "src/**/*",
+        "src/web3/old_abis/*.json",
+        "src/mock/**/*.json",
+        "src/mock/**/*.js"
+    ],
+    "compilerOptions": {
+        "baseUrl": "src",
+        "module": "esnext",
+        "rootDir": ".",
+        "outDir": "./build",
+        "composite": true,
+        "allowJs": true
+    },
+    "references": [
+        {
+            "path": "../../packages/skillforge-web3"
+        },
+        {
+            "path": "../../packages/skillforge-widget"
+        },
+        {
+            "path": "../../packages/theme"
+        },
+        {
+            "path": "../../packages/utils"
+        },
+        {
+            "path": "../../packages/web3-modal"
+        }
+    ]
+}

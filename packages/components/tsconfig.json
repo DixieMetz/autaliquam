@@ -1,0 +1,37 @@
+{
+    "extends": "../../tsconfig.build.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "module": "esnext",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "composite": true
+    },
+    "references": [
+        {
+            "path": "../assets"
+        },
+        {
+            "path": "../constants"
+        },
+        {
+            "path": "../hooks"
+        },
+        {
+            "path": "../theme"
+        },
+        {
+            "path": "../types"
+        },
+        {
+            "path": "../utils"
+        }
+    ],
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "./src/**/*.fixture.tsx?",
+        "./src/**/*.decorator.tsx?"
+    ]
+}
